@@ -1,242 +1,1674 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Romain Mari</title>
-    <meta name="author" content="Romain Mari">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
-    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
-    <link rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
-    <link rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?19f3075a2d19613090fe9e16b564e1fe" media="" id="highlight_theme_light">
-    <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
-    <link rel="canonical" href="https://rmari.github.io/">
-    <link rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?e74e74bf055e5729d44a7d031a5ca6a5" media="none" id="highlight_theme_dark">
-    <script src="/assets/js/theme.js?6185d15ea1982787ad7f435576553d64"></script>
-</head>
-<body class="fixed-top-nav ">
-    <header>
-        <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
-            <div class="container">
-                <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar top-bar"></span>
-                    <span class="icon-bar middle-bar"></span>
-                    <span class="icon-bar bottom-bar"></span>
-                </button>
-                <div class="collapse navbar-collapse text-right" id="navbarNav">
-                    <ul class="navbar-nav ml-auto flex-nowrap">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/">
-                                about
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="/people/">people</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="/publications/">publications</a>
-                        </li>
-                        <li class="toggle-container">
-                            <button id="light-toggle" title="Change theme">
-                                <i class="fa-solid fa-moon"></i>
-                                <i class="fa-solid fa-sun"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <progress id="progress" value="0">
-            <div class="progress-container">
-                <span class="progress-bar"></span>
-            </div>
-        </progress>
-    </header>
-    <div class="container mt-5">
-        <div class="post">
-            <header class="post-header">
-                <h1 class="post-title">
-                    <span class="font-weight-bold">Romain</span>
-                     Mari 
-                </h1>
-                <p class="desc">
-                    <a href="https://liphy.univ-grenoble-alpes.fr/?lang=en" rel="external nofollow noopener" target="_blank">LIPhy</a>
-                    , Univ. Grenoble-Alpes &amp; CNRS, Grenoble
-                </p>
-            </header>
-            <article>
-                <div class="profile float-right">
-                    <figure>
-                        <picture>
-                            <source class="responsive-img-srcset" srcset=" /assets/img/prof_pic-480.webp 480w, /assets/img/prof_pic-800.webp 800w, /assets/img/prof_pic-1400.webp 1400w, " sizes="(min-width: 800px) 231.0px, (min-width: 576px) 30vw, 95vw" type="image/webp">
-                            </source>
-                            <img src="/assets/img/prof_pic.jpg?35b1c7a9d3ec85f9d0a0ad150c6ebad7" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="prof_pic.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-                        </picture>
-                    </figure>
-                </div>
-                <div class="clearfix">
-                    <p>
-                        I am currently working as a CNRS researcher (Chargé de Recherche) at the 
-                        <a href="https://liphy.univ-grenoble-alpes.fr/?lang=en" rel="external nofollow noopener" target="_blank">Laboratoire Interdisciplinaire de Physique</a>
-                         in Grenoble, within the 
-                        <a href="https://liphy.univ-grenoble-alpes.fr/en/psm" rel="external nofollow noopener" target="_blank">Statistical Physics and Modeling</a>
-                         group.
-                    </p>
-                    <p>I am interested in the structure and rheology of soft amorphous materials, like glasses, granular systems or dense suspensions. My main focus is the way these materials behave close to liquid-solid transitions, such as jamming, yielding or glass transitions. I use both analytical and numerical tools to tackle these problems.</p>
-                </div>
-                <h2>
-                    <a href="/news/" style="color: inherit;">news</a>
-                </h2>
-                <div class="news">
-                    <div class="table-responsive" style="max-height: 60vw">
-                        <table class="table table-sm table-borderless">
-                            <tr>
-                                <th scope="row" style="width: 20%">Jul 1, 2024</th>
-                                <td>
-                                     Our paper 
-                                    <a href="https://doi.org/10.1103/PhysRevLett.132.268203" rel="external nofollow noopener" target="_blank">“Yielding is an absorbing phase transition with vanishing critical fluctuations”</a>
-                                    , with Tristan Jocteur, Shana Figueiredo, Kirsten Martens, Eric Bertin, has been published in Physical Review Letters! 
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" style="width: 20%">Jan 22, 2024</th>
-                                <td>
-                                     New preprint 
-                                    <a href="https://arxiv.org/abs/2401.11797" rel="external nofollow noopener" target="_blank">“Yielding is an absorbing phase transition with vanishing critical fluctuations”</a>
-                                    , with Tristan Jocteur, Shana Figueiredo, Kirsten Martens, Eric Bertin. 
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" style="width: 20%">Jun 1, 2023</th>
-                                <td>
-                                    <a href="https://doi.org/10.1103/PhysRevFluids.8.053302" rel="external nofollow noopener" target="_blank">“Microscopically Grounded Constitutive Model for Dense Suspensions of Soft Particles below Jamming”</a>
-                                    , with Nicolas Cuny and Éric Bertin, is now published in Physical Review Fluids. 
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" style="width: 20%">Mar 20, 2023</th>
-                                <td>
-                                    <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.118202" rel="external nofollow noopener" target="_blank">“Rheology of Dense Suspensions under Shear Rotation”</a>
-                                    , with Frédéric Blanc, François Peters, Jurriaan Gillissen, Mike Cates, Sandra Bosio, and Camille Benarroche, is now published in Physical Review Letters. 
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" style="width: 20%">Nov 1, 2022</th>
-                                <td>
-                                     Nicolas Cuny received the 2022 PhD Award from the 
-                                    <a href="http://legfr.fr/site/index.php" rel="external nofollow noopener" target="_blank">Groupe Français de Rhéologie</a>
-                                    ! 
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="social">
-                    <div class="contact-icons">
-                        <a href="mailto:%72%6F%6D%61%69%6E.%6D%61%72%69@%75%6E%69%76-%67%72%65%6E%6F%62%6C%65-%61%6C%70%65%73.%66%72" title="email">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                        <a href="https://orcid.org/0000-0001-7877-416X#%20your%20ORCID%20ID" title="ORCID" rel="external nofollow noopener" target="_blank">
-                            <i class="ai ai-orcid"></i>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=1J_75GMAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                        <a href="https://publons.com/a/AAB-1157-2019/" title="Publons" rel="external nofollow noopener" target="_blank">
-                            <i class="ai ai-publons"></i>
-                        </a>
-                        <a href="https://github.com/rmari" title="GitHub" rel="external nofollow noopener" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                    <div class="contact-note"></div>
-                </div>
-            </article>
-        </div>
-    </div>
-    <footer class="fixed-bottom">
-        <div class="container mt-0">
-             © Copyright 2024 Romain Mari. Powered by 
-            <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a>
-             with 
-            <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a>
-             theme. Hosted by 
-            <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>
-            . 
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
-    <script defer src="/assets/js/zoom.js?7b30caa5023af4af8408a472dc4e1ebb"></script>
-    <script defer src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
-    <script src="/assets/js/no_defer.js?d633890033921b33e0ceb13d22340a9c"></script>
-    <script defer src="/assets/js/common.js?acdb9690d7641b2f8d40529018c71a01"></script>
-    <script defer src="/assets/js/copy_code.js?9b43d6e67ddc7c0855b1478ee4c48c2d" type="text/javascript"></script>
-    <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-    <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <!--Shortcut icon-->
+
+    <title> Team |  Marin Lab</title>
+
+    <meta name='robots' content='noindex, nofollow'/>
+    <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/acc6f5f282a678541efa8a82/script.js"></script>
+    <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
+    <link rel="alternate" type="application/rss+xml" title="Marin Lab &raquo; Feed" href="https://alvaro-marin.com/feed/"/>
+    <link rel="alternate" type="application/rss+xml" title="Marin Lab &raquo; Comments Feed" href="https://alvaro-marin.com/comments/feed/"/>
+    <meta property='og:site_name' content='Marin Lab'/>
+    <meta property='og:url' content='https://alvaro-marin.com/team/'/>
+    <meta property='og:title' content='Team'/>
+    <meta property='og:type' content='article'/>
     <script type="text/javascript">
-    window.MathJax = {
-        tex: {
-            tags: "ams"
+    /* <![CDATA[ */
+    window._wpemojiSettings = {
+        "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
+        "ext": ".png",
+        "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
+        "svgExt": ".svg",
+        "source": {
+            "concatemoji": "https:\/\/alvaro-marin.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=b610b88d46eafa0988d3189cc6430174"
         }
     };
-    </script>
-    <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-    <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script type="text/javascript">
-    function progressBarSetup() {
-        "max" in document.createElement("progress") ? (initializeProgressElement(), $(document).on("scroll", function() {
-            progressBar.attr({
-                value: getCurrentScrollPosition()
+    /*! This file is auto-generated */
+    !function(i, n) {
+        var o,
+            s,
+            e;
+        function c(e) {
+            try {
+                var t = {
+                    supportTests: e,
+                    timestamp: (new Date).valueOf()
+                };
+                sessionStorage.setItem(o, JSON.stringify(t))
+            } catch (e) {}
+        }
+        function p(e, t, n) {
+            e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0);
+            var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+                r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+            return t.every(function(e, t) {
+                return e === r[t]
             })
-        }), $(window).on("resize", initializeProgressElement)) : (resizeProgressBar(), $(document).on("scroll", resizeProgressBar), $(window).on("resize", resizeProgressBar))
-    }
-    function getCurrentScrollPosition() {
-        return $(window).scrollTop()
-    }
-    function initializeProgressElement() {
-        let e = $("#navbar").outerHeight(!0);
-        $("body").css({
-            "padding-top": e
-        }),
-        $("progress-container").css({
-            "padding-top": e
-        }),
-        progressBar.css({
-            top: e
-        }),
-        progressBar.attr({
-            max: getDistanceToScroll(),
-            value: getCurrentScrollPosition()
-        })
-    }
-    function getDistanceToScroll() {
-        return $(document).height() - $(window).height()
-    }
-    function resizeProgressBar() {
-        progressBar.css({
-            width: getWidthPercentage() + "%"
-        })
-    }
-    function getWidthPercentage() {
-        return getCurrentScrollPosition() / getDistanceToScroll() * 100
-    }
-    const progressBar = $("#progress");
-    window.onload = function() {
-        setTimeout(progressBarSetup, 50)
-    };
+        }
+        function u(e, t, n) {
+            switch (t) {
+            case "flag":
+                return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+            case "emoji":
+                return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
+            }
+            return !1
+        }
+        function f(e, t, n) {
+            var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
+                a = r.getContext("2d", {
+                    willReadFrequently: !0
+                }),
+                o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
+            return e.forEach(function(e) {
+                o[e] = t(a, e, n)
+            }), o
+        }
+        function t(e) {
+            var t = i.createElement("script");
+            t.src = e,
+            t.defer = !0,
+            i.head.appendChild(t)
+        }
+        "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
+            everything: !0,
+            everythingExceptFlag: !0
+        }, e = new Promise(function(e) {
+            i.addEventListener("DOMContentLoaded", e, {
+                once: !0
+            })
+        }), new Promise(function(t) {
+            var n = function() {
+                try {
+                    var e = JSON.parse(sessionStorage.getItem(o));
+                    if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests)
+                        return e.supportTests
+                } catch (e) {}
+                return null
+            }();
+            if (!n) {
+                if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
+                    try {
+                        var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
+                            r = new Blob([e], {
+                                type: "text/javascript"
+                            }),
+                            a = new Worker(URL.createObjectURL(r), {
+                                name: "wpTestEmojiSupports"
+                            });
+                        return void (a.onmessage = function(e) {
+                            c(n = e.data),
+                            a.terminate(),
+                            t(n)
+                        })
+                    } catch (e) {}
+                c(n = f(s, u, p))
+            }
+            t(n)
+        }).then(function(e) {
+            for (var t in e)
+                n.supports[t] = e[t],
+                n.supports.everything = n.supports.everything && n.supports[t],
+                "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+            n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag,
+            n.DOMReady = !1,
+            n.readyCallback = function() {
+                n.DOMReady = !0
+            }
+        }).then(function() {
+            return e
+        }).then(function() {
+            var e;
+            n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+        }))
+    }((window, document), window._wpemojiSettings);
+    /* ]]> */
     </script>
+    <link rel='stylesheet' id='js_composer_front-css' href='https://alvaro-marin.com/wp-content/themes/salient/wpbakery/js_composer/assets/css/js_composer_front.css?ver=3.7.3' type='text/css' media='all'/>
+    <link rel='stylesheet' id='options_typography_Oxygen-400-css' href='https://fonts.googleapis.com/css?family=Oxygen:400' type='text/css' media='all'/>
+    <link rel='stylesheet' id='options_typography_Loved+by+the+King-400-css' href='https://fonts.googleapis.com/css?family=Loved+by+the+King:400' type='text/css' media='all'/>
+    <style id='wp-emoji-styles-inline-css' type='text/css'>
+    img.wp-smiley, img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+    }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='https://alvaro-marin.com/wp-includes/css/dist/block-library/style.min.css?ver=b610b88d46eafa0988d3189cc6430174' type='text/css' media='all'/>
+    <style id='classic-theme-styles-inline-css' type='text/css'>
+    /*! This file is auto-generated */
+    .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(.667em + 2px) calc(1.333em + 2px);
+        font-size:1.125em
+    }
+
+    .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none
+    }
+    </style>
+    <style id='global-styles-inline-css' type='text/css'>
+    :root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+    }
+
+    :where(.is-layout-flex) {
+        gap: 0.5em;
+    }
+
+    :where(.is-layout-grid) {
+        gap: 0.5em;
+    }
+
+    body .is-layout-flex {
+        display: flex;
+    }
+
+    .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .is-layout-flex > :is( *, div) {
+        margin: 0;
+    }
+
+    body .is-layout-grid {
+        display: grid;
+    }
+
+    .is-layout-grid > :is( *, div) {
+        margin: 0;
+    }
+
+    :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+    }
+
+    :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+    }
+
+    :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+    }
+
+    :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+    }
+
+    .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+    }
+
+    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+    }
+
+    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+    }
+
+    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+    }
+
+    .has-cool-to-warm-spectrum-gradient-background {
+        background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+    }
+
+    .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+    }
+
+    .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+    }
+
+    .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+    }
+
+    .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+    }
+
+    .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+    }
+
+    .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+    }
+
+    .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+    }
+
+    .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+    }
+
+    .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+    }
+
+    .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+    }
+
+    :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+    }
+
+    :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+    }
+
+    :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+    }
+
+    :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+    }
+
+    :root :where(.wp-block-pullquote) {
+        font-size: 1.5em;
+        line-height: 1.6;
+    }
+    </style>
+    <link rel='stylesheet' id='image-hover-effects-css-css' href='https://alvaro-marin.com/wp-content/plugins/mega-addons-for-visual-composer/css/ihover.css?ver=b610b88d46eafa0988d3189cc6430174' type='text/css' media='all'/>
+    <link rel='stylesheet' id='style-css-css' href='https://alvaro-marin.com/wp-content/plugins/mega-addons-for-visual-composer/css/style.css?ver=b610b88d46eafa0988d3189cc6430174' type='text/css' media='all'/>
+    <link rel='stylesheet' id='font-awesome-latest-css' href='https://alvaro-marin.com/wp-content/plugins/mega-addons-for-visual-composer/css/font-awesome/css/all.css?ver=b610b88d46eafa0988d3189cc6430174' type='text/css' media='all'/>
+    <link rel='stylesheet' id='inline-tweet-sharer-style-css' href='https://alvaro-marin.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.css?ver=2.6.6' type='text/css' media='all'/>
+    <link rel='stylesheet' id='rgs-css' href='https://alvaro-marin.com/wp-content/themes/salient/css/rgs.css?ver=4.8.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='font-awesome-css' href='https://alvaro-marin.com/wp-content/themes/salient/css/font-awesome.min.css?ver=b610b88d46eafa0988d3189cc6430174' type='text/css' media='all'/>
+    <link rel='stylesheet' id='main-styles-css' href='https://alvaro-marin.com/wp-content/themes/salient/style.css?ver=4.8.1' type='text/css' media='all'/>
+    <!--[if lt IE 9]>
+    <link rel='stylesheet' id='nectar-ie8-css' href='https://alvaro-marin.com/wp-content/themes/salient/css/ie8.css?ver=b610b88d46eafa0988d3189cc6430174' type='text/css' media='all' />
+    <![endif]-->
+    <link rel='stylesheet' id='responsive-css' href='https://alvaro-marin.com/wp-content/themes/salient/css/responsive.css?ver=4.8.1' type='text/css' media='all'/>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.js?ver=2.6.6" id="inline-tweet-sharer-js-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-content/themes/salient/js/modernizr.js?ver=2.6.2" id="modernizer-js"></script>
+    <link rel="https://api.w.org/" href="https://alvaro-marin.com/wp-json/"/>
+    <link rel="alternate" title="JSON" type="application/json" href="https://alvaro-marin.com/wp-json/wp/v2/pages/1298"/>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://alvaro-marin.com/xmlrpc.php?rsd"/>
+
+    <link rel="canonical" href="https://alvaro-marin.com/team/"/>
+    <link rel='shortlink' href='https://alvaro-marin.com/?p=1298'/>
+    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://alvaro-marin.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Falvaro-marin.com%2Fteam%2F"/>
+    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://alvaro-marin.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Falvaro-marin.com%2Fteam%2F&#038;format=xml"/>
+    <meta name="generator" content="Redux 4.4.18"/>
+    <style type="text/css">
+    body a {
+        color: #e62e00;
+    }
+
+    header#top nav ul li a:hover, header#top nav .sf-menu li.sfHover > a, header#top nav .sf-menu li.current-menu-item > a, header#top nav .sf-menu li.current_page_item > a .sf-sub-indicator i, header#top nav .sf-menu li.current_page_ancestor > a .sf-sub-indicator i, header#top nav ul li a:hover, header#top nav .sf-menu li.sfHover > a, header#top nav .sf-menu li.current_page_ancestor > a, header#top nav .sf-menu li.current-menu-ancestor > a, header#top nav .sf-menu li.current_page_item > a, body header#top nav .sf-menu li.current_page_item > a .sf-sub-indicator [class^="icon-"], header#top nav .sf-menu li.current_page_ancestor > a .sf-sub-indicator [class^="icon-"], header#top nav .sf-menu li.current-menu-ancestor > a, header#top nav .sf-menu li.current_page_item > a, .sf-menu li ul li.sfHover > a .sf-sub-indicator [class^="icon-"], ul.sf-menu > li > a:hover > .sf-sub-indicator i, ul.sf-menu > li > a:active > .sf-sub-indicator i, ul.sf-menu > li.sfHover > a > .sf-sub-indicator i, .sf-menu ul li.current_page_item > a, .sf-menu ul li.current-menu-ancestor > a, .sf-menu ul li.current_page_ancestor > a, .sf-menu ul a:focus, .sf-menu ul a:hover, .sf-menu ul a:active, .sf-menu ul li:hover > a, .sf-menu ul li.sfHover > a, .sf-menu li ul li a:hover, .sf-menu li ul li.sfHover > a, #footer-outer a:hover, .recent-posts .post-header a:hover, article.post .post-header a:hover, article.result a:hover, article.post .post-header h2 a, .single article.post .post-meta a:hover, .comment-list .comment-meta a:hover, label span, .wpcf7-form p span, .icon-3x[class^="icon-"], .icon-3x[class * =" icon-"], .icon-tiny[class^="icon-"], .circle-border, article.result .title a, .home .blog-recent .col .post-header a:hover, .home .blog-recent .col .post-header h3 a, #single-below-header a:hover, header#top #logo:hover, .sf-menu > li.current_page_ancestor > a > .sf-sub-indicator [class^="icon-"], .sf-menu > li.current-menu-ancestor > a > .sf-sub-indicator [class^="icon-"], body #mobile-menu li.open > a [class^="icon-"], .pricing-column h3, .comment-author a:hover, .project-attrs li i, #footer-outer #copyright li a i:hover, .col:hover > [class^="icon-"].icon-3x.accent-color.alt-style.hovered, .col:hover > [class * =" icon-"].icon-3x.accent-color.alt-style.hovered, #header-outer .widget_shopping_cart .cart_list a, .woocommerce .star-rating, .woocommerce-page table.cart a.remove, .woocommerce form .form-row .required, .woocommerce-page form .form-row .required, body #header-secondary-outer #social a:hover i, .woocommerce ul.products li.product .price, body .twitter-share:hover i, .twitter-share.hovered i, body .linkedin-share:hover i, .linkedin-share.hovered i, body .google-plus-share:hover i, .google-plus-share.hovered i, .pinterest-share:hover i, .pinterest-share.hovered i, .facebook-share:hover i, .facebook-share.hovered i, .woocommerce-page ul.products li.product .price, .nectar-milestone .number.accent-color, header#top nav > ul > li.megamenu > ul > li > a:hover, header#top nav > ul > li.megamenu > ul > li.sfHover > a, body #portfolio-nav a:hover i, span.accent-color, .nectar-love:hover i, .nectar-love.loved i, .portfolio-items .nectar-love:hover i, .portfolio-items .nectar-love.loved i, body .hovered .nectar-love i, header#top nav ul #search-btn a:hover span, header#top nav ul .slide-out-widget-area-toggle a:hover span, #search-outer #search #close a span:hover, .carousel-wrap[data-full-width="true"] .carousel-heading a:hover i, #search-outer .ui-widget-content li:hover a .title, #search-outer .ui-widget-content .ui-state-hover .title, #search-outer .ui-widget-content .ui-state-focus .title, #portfolio-filters-inline .container ul li a.active, body [class^="icon-"].icon-default-style, .team-member a.accent-color:hover, .ascend .comment-list .reply a, .wpcf7-form .wpcf7-not-valid-tip {
+        color: #e62e00 !important;
+    }
+
+    .col:not(#post-area):not(.span_12):not(#sidebar):hover [class^="icon-"].icon-3x.accent-color.alt-style.hovered, body .col:not(#post-area):not(.span_12):not(#sidebar):hover a [class * =" icon-"].icon-3x.accent-color.alt-style.hovered, .ascend #header-outer:not(.transparent) .cart-outer:hover .cart-menu-wrap:not(.has_products) .icon-salient-cart {
+        color: #e62e00 !important;
+    }
+
+    .orbit-wrapper div.slider-nav span.right, .orbit-wrapper div.slider-nav span.left, .flex-direction-nav a, .jp-play-bar, .jp-volume-bar-value, .jcarousel-prev:hover, .jcarousel-next:hover, .portfolio-items .col[data-default-color="true"] .work-info-bg, .portfolio-items .col[data-default-color="true"] .bottom-meta, #portfolio-filters a, #portfolio-filters #sort-portfolio, .project-attrs li span, .progress li span, .nectar-progress-bar span, #footer-outer #footer-widgets .col .tagcloud a:hover, #sidebar .widget .tagcloud a:hover, article.post .more-link span:hover, article.post.quote .post-content .quote-inner, article.post.link .post-content .link-inner, #pagination .next a:hover, #pagination .prev a:hover, .comment-list .reply a:hover, input[type=submit]:hover, #footer-outer #copyright li a.vimeo:hover, #footer-outer #copyright li a.behance:hover, .toggle.open h3 a, .tabbed > ul li a.active-tab, [class * =" icon-"], .icon-normal, .bar_graph li span, .nectar-button[data-color-override="false"].regular-button, body .swiper-slide .button.transparent_2 a.primary-color:hover, #footer-outer #footer-widgets .col input[type="submit"], .carousel-prev:hover, .carousel-next:hover, .blog-recent .more-link span:hover, .post-tags a:hover, .pricing-column.highlight h3, #to-top:hover, #to-top.dark:hover, #pagination a.page-numbers:hover, #pagination span.page-numbers.current, .single-portfolio .facebook-share a:hover, .single-portfolio .twitter-share a:hover, .single-portfolio .pinterest-share a:hover, .single-post .facebook-share a:hover, .single-post .twitter-share a:hover, .single-post .pinterest-share a:hover, .mejs-controls .mejs-time-rail .mejs-time-current, .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current, .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, article.post.quote .post-content .quote-inner, article.post.link .post-content .link-inner, article.format-status .post-content .status-inner, article.post.format-aside .aside-inner, body #header-secondary-outer #social li a.behance:hover, body #header-secondary-outer #social li a.vimeo:hover, #sidebar .widget:hover [class^="icon-"].icon-3x, article.post.quote .content-inner .quote-inner .whole-link, body [class^="icon-"].icon-3x.alt-style.accent-color, body [class * =" icon-"].icon-3x.alt-style.accent-color, #slide-out-widget-area, #header-outer .widget_shopping_cart a.button, #header-outer a.cart-contents span, .swiper-slide .button.solid_color a, #portfolio-filters, button[type=submit]:hover, #buddypress button:hover, #buddypress a.button:hover, #buddypress ul.button-nav li.current a, header#top nav ul .slide-out-widget-area-toggle a:hover i.lines, header#top nav ul .slide-out-widget-area-toggle a:hover i.lines:after, header#top nav ul .slide-out-widget-area-toggle a:hover i.lines:before, #buddypress a.button:focus {
+        background-color: #e62e00 !important;
+    }
+
+    .col:hover > [class^="icon-"].icon-3x:not(.alt-style).accent-color.hovered, .col:hover > [class * =" icon-"].icon-3x:not(.alt-style).accent-color.hovered, body .nectar-button.see-through-2[data-hover-color-override="false"]:hover, .col:not(#post-area):not(.span_12):not(#sidebar):hover [class^="icon-"].icon-3x:not(.alt-style).accent-color.hovered, .col:not(#post-area):not(.span_12):not(#sidebar):hover a [class * =" icon-"].icon-3x:not(.alt-style).accent-color.hovered {
+        background-color: #e62e00 !important;
+    }
+
+    .tabbed > ul li a.active-tab, body .recent_projects_widget a:hover img, .recent_projects_widget a:hover img, #sidebar #flickr a:hover img, body .nectar-button.see-through-2[data-hover-color-override="false"]:hover, #footer-outer #flickr a:hover img, #featured article .post-title a:hover, body #featured article .post-title a:hover, div.wpcf7-validation-errors {
+        border-color: #e62e00 !important;
+    }
+
+    .default-loading-icon:before {
+        border-top-color: #e62e00 !important;
+    }
+
+    #header-outer a.cart-contents span:before {
+        border-color: transparent #e62e00;
+    }
+
+    .col:not(#post-area):not(.span_12):not(#sidebar):hover .hovered .circle-border, #sidebar .widget:hover .circle-border {
+        border-color: #e62e00;
+    }
+
+    .gallery a:hover img {
+        border-color: #e62e00 !important;
+    }
+
+    @media only screen and (min-width: 1px) and(max-width: 1000px) {
+        body #featured article .post-title > a {
+            background-color: #e62e00;
+        }
+
+        body #featured article .post-title > a {
+            border-color: #e62e00;
+        }
+    }
+
+    .nectar-button.regular-button.extra-color-1 {
+        background-color: #e62e00 !important;
+    }
+
+    .icon-3x[class^="icon-"].extra-color-1:not(.alt-style), .icon-tiny[class^="icon-"].extra-color-1, .icon-3x[class * =" icon-"].extra-color-1:not(.alt-style), .icon-3x[class * =" icon-"].extra-color-1:not(.alt-style) .circle-border, .woocommerce-page table.cart a.remove, .nectar-milestone .number.extra-color-1, span.extra-color-1, .team-member ul.social.extra-color-1 li a, .stock.out-of-stock, body [class^="icon-"].icon-default-style.extra-color-1, .team-member a.extra-color-1:hover {
+        color: #e62e00 !important;
+    }
+
+    .col:hover > [class^="icon-"].icon-3x.extra-color-1:not(.alt-style), .col:hover > [class * =" icon-"].icon-3x.extra-color-1:not(.alt-style).hovered, body .swiper-slide .button.transparent_2 a.extra-color-1:hover, body .col:not(#post-area):not(.span_12):not(#sidebar):hover [class^="icon-"].icon-3x.extra-color-1:not(.alt-style).hovered, body .col:not(#post-area):not(#sidebar):not(.span_12):hover a [class * =" icon-"].icon-3x.extra-color-1:not(.alt-style).hovered, #sidebar .widget:hover [class^="icon-"].icon-3x.extra-color-1:not(.alt-style) {
+        background-color: #e62e00 !important;
+    }
+
+    body [class^="icon-"].icon-3x.alt-style.extra-color-1, body [class * =" icon-"].icon-3x.alt-style.extra-color-1, [class * =" icon-"].extra-color-1.icon-normal, .extra-color-1.icon-normal, .bar_graph li span.extra-color-1, .nectar-progress-bar span.extra-color-1, #header-outer .widget_shopping_cart a.button, .woocommerce ul.products li.product .onsale, .woocommerce-page ul.products li.product .onsale, .woocommerce span.onsale, .woocommerce-page span.onsale, .woocommerce-page table.cart a.remove:hover, .swiper-slide .button.solid_color a.extra-color-1, .toggle.open.extra-color-1 h3 a {
+        background-color: #e62e00 !important;
+    }
+
+    .col:hover > [class^="icon-"].icon-3x.extra-color-1.alt-style.hovered, .col:hover > [class * =" icon-"].icon-3x.extra-color-1.alt-style.hovered, .no-highlight.extra-color-1 h3, .col:not(#post-area):not(.span_12):not(#sidebar):hover [class^="icon-"].icon-3x.extra-color-1.alt-style.hovered, body .col:not(#post-area):not(.span_12):not(#sidebar):hover a [class * =" icon-"].icon-3x.extra-color-1.alt-style.hovered {
+        color: #e62e00 !important;
+    }
+
+    .col:not(#post-area):not(.span_12):not(#sidebar):hover .extra-color-1.hovered .circle-border, .woocommerce-page table.cart a.remove, #sidebar .widget:hover .extra-color-1 .circle-border, .woocommerce-page table.cart a.remove {
+        border-color: #e62e00;
+    }
+
+    .pricing-column.highlight.extra-color-1 h3 {
+        background-color: #e62e00 !important;
+    }
+
+    .nectar-button.regular-button.extra-color-2 {
+        background-color: #e62e00 !important;
+    }
+
+    .icon-3x[class^="icon-"].extra-color-2:not(.alt-style), .icon-3x[class * =" icon-"].extra-color-2:not(.alt-style), .icon-tiny[class^="icon-"].extra-color-2, .icon-3x[class * =" icon-"].extra-color-2 .circle-border, .nectar-milestone .number.extra-color-2, span.extra-color-2, .team-member ul.social.extra-color-2 li a, body [class^="icon-"].icon-default-style.extra-color-2, .team-member a.extra-color-2:hover {
+        color: #e62e00 !important;
+    }
+
+    .col:hover > [class^="icon-"].icon-3x.extra-color-2:not(.alt-style).hovered, .col:hover > [class * =" icon-"].icon-3x.extra-color-2:not(.alt-style).hovered, body .swiper-slide .button.transparent_2 a.extra-color-2:hover, .col:not(#post-area):not(.span_12):not(#sidebar):hover [class^="icon-"].icon-3x.extra-color-2:not(.alt-style).hovered, .col:not(#post-area):not(.span_12):not(#sidebar):hover a [class * =" icon-"].icon-3x.extra-color-2:not(.alt-style).hovered, #sidebar .widget:hover [class^="icon-"].icon-3x.extra-color-2:not(.alt-style) {
+        background-color: #e62e00 !important;
+    }
+
+    body [class^="icon-"].icon-3x.alt-style.extra-color-2, body [class * =" icon-"].icon-3x.alt-style.extra-color-2, [class * =" icon-"].extra-color-2.icon-normal, .extra-color-2.icon-normal, .bar_graph li span.extra-color-2, .nectar-progress-bar span.extra-color-2, .woocommerce .product-wrap .add_to_cart_button.added, .woocommerce-message, .woocommerce-error, .woocommerce-info, .woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-range, .swiper-slide .button.solid_color a.extra-color-2, .toggle.open.extra-color-2 h3 a {
+        background-color: #e62e00 !important;
+    }
+
+    .col:hover > [class^="icon-"].icon-3x.extra-color-2.alt-style.hovered, .col:hover > [class * =" icon-"].icon-3x.extra-color-2.alt-style.hovered, .no-highlight.extra-color-2 h3, .col:not(#post-area):not(.span_12):not(#sidebar):hover [class^="icon-"].icon-3x.extra-color-2.alt-style.hovered, body .col:not(#post-area):not(.span_12):not(#sidebar):hover a [class * =" icon-"].icon-3x.extra-color-2.alt-style.hovered {
+        color: #e62e00 !important;
+    }
+
+    .col:not(#post-area):not(.span_12):not(#sidebar):hover .extra-color-2.hovered .circle-border, #sidebar .widget:hover .extra-color-2 .circle-border {
+        border-color: #e62e00;
+    }
+
+    .pricing-column.highlight.extra-color-2 h3 {
+        background-color: #e62e00 !important;
+    }
+
+    .nectar-button.regular-button.extra-color-3 {
+        background-color: #333333 !important;
+    }
+
+    .icon-3x[class^="icon-"].extra-color-3:not(.alt-style), .icon-3x[class * =" icon-"].extra-color-3:not(.alt-style), .icon-tiny[class^="icon-"].extra-color-3, .icon-3x[class * =" icon-"].extra-color-3 .circle-border, .nectar-milestone .number.extra-color-3, span.extra-color-3, .team-member ul.social.extra-color-3 li a, body [class^="icon-"].icon-default-style.extra-color-3, .team-member a.extra-color-3:hover {
+        color: #333333 !important;
+    }
+
+    .col:hover > [class^="icon-"].icon-3x.extra-color-3:not(.alt-style).hovered, .col:hover > [class * =" icon-"].icon-3x.extra-color-3:not(.alt-style).hovered, body .swiper-slide .button.transparent_2 a.extra-color-3:hover, .col:not(#post-area):not(.span_12):not(#sidebar):hover [class^="icon-"].icon-3x.extra-color-3:not(.alt-style).hovered, .col:not(#post-area):not(.span_12):not(#sidebar):hover a [class * =" icon-"].icon-3x.extra-color-3:not(.alt-style).hovered, #sidebar .widget:hover [class^="icon-"].icon-3x.extra-color-3:not(.alt-style) {
+        background-color: #333333 !important;
+    }
+
+    body [class^="icon-"].icon-3x.alt-style.extra-color-3, body [class * =" icon-"].icon-3x.alt-style.extra-color-3, .extra-color-3.icon-normal, [class * =" icon-"].extra-color-3.icon-normal, .bar_graph li span.extra-color-3, .nectar-progress-bar span.extra-color-3, .swiper-slide .button.solid_color a.extra-color-3, .toggle.open.extra-color-3 h3 a {
+        background-color: #333333 !important;
+    }
+
+    .col:hover > [class^="icon-"].icon-3x.extra-color-3.alt-style.hovered, .col:hover > [class * =" icon-"].icon-3x.extra-color-3.alt-style.hovered, .no-highlight.extra-color-3 h3, .col:not(#post-area):not(.span_12):not(#sidebar):hover [class^="icon-"].icon-3x.extra-color-3.alt-style.hovered, body .col:not(#post-area):not(.span_12):not(#sidebar):hover a [class * =" icon-"].icon-3x.extra-color-3.alt-style.hovered {
+        color: #333333 !important;
+    }
+
+    .col:not(#post-area):not(.span_12):not(#sidebar):hover .extra-color-3.hovered .circle-border, #sidebar .widget:hover .extra-color-3 .circle-border {
+        border-color: #333333;
+    }
+
+    .pricing-column.highlight.extra-color-3 h3 {
+        background-color: #333333 !important;
+    }
+
+    body #header-outer, body #search-outer {
+        background-color: #f5f5f5;
+    }
+
+    header#top nav > ul > li > a, header#top #logo, header#top .span_9 > .slide-out-widget-area-toggle i, .sf-sub-indicator [class^="icon-"], body[data-header-color="custom"].ascend #boxed #header-outer .cart-menu .cart-icon-wrap i, body.ascend #boxed #header-outer .cart-menu .cart-icon-wrap i, .sf-sub-indicator [class * =" icon-"], header#top nav ul #search-btn a span, header#top #toggle-nav i, header#top #toggle-nav i, header#top #mobile-cart-link i, #header-outer .cart-menu .cart-icon-wrap .icon-salient-cart, #search-outer #search input[type="text"], #search-outer #search #close a span {
+        color: #888888 !important;
+    }
+
+    header#top nav ul .slide-out-widget-area-toggle a i.lines, header#top nav ul .slide-out-widget-area-toggle a i.lines:after, header#top nav ul .slide-out-widget-area-toggle a i.lines:before {
+        background-color: #888888 !important;
+    }
+
+    body header#top nav > ul > li > a:hover, header#top #logo:hover, body header#top nav .sf-menu > li.sfHover > a, body header#top nav .sf-menu > li.current-menu-item > a, body header#top nav .sf-menu > li.current_page_item > a .sf-sub-indicator i, body header#top nav .sf-menu > li.current_page_ancestor > a .sf-sub-indicator i, body header#top nav .sf-menu > li.sfHover > a, body header#top nav .sf-menu > li.current_page_ancestor > a, body header#top nav .sf-menu > li.current-menu-ancestor > a, body header#top nav .sf-menu > li.current-menu-ancestor > a i, body header#top nav .sf-menu > li.current_page_item > a, body header#top nav .sf-menu > li.current_page_item > a .sf-sub-indicator [class^="icon-"], body header#top nav .sf-menu > li.current_page_ancestor > a .sf-sub-indicator [class^="icon-"], body header#top nav .sf-menu > li.current-menu-ancestor > a, body .sf-menu > li.sfHover > a .sf-sub-indicator [class^="icon-"], body .sf-menu > li:hover > a .sf-sub-indicator [class^="icon-"], body .sf-menu > li:hover > a, header#top nav ul #search-btn a:hover span, header#top nav ul .slide-out-widget-area-toggle a:hover span, #search-outer #search #close a span:hover {
+        color: #27CCC0 !important;
+    }
+
+    header#top nav ul .slide-out-widget-area-toggle a:hover i.lines, header#top nav ul .slide-out-widget-area-toggle a:hover i.lines:after, header#top nav ul .slide-out-widget-area-toggle a:hover i.lines:before {
+        background-color: #27CCC0 !important;
+    }
+
+    #search-outer .ui-widget-content, header#top .sf-menu li ul li a, header#top nav > ul > li.megamenu > ul.sub-menu, body header#top nav > ul > li.megamenu > ul.sub-menu > li > a, #header-outer .widget_shopping_cart .cart_list a, #header-secondary-outer ul ul li a, #header-outer .widget_shopping_cart .cart_list li, .woocommerce .cart-notification, #header-outer .widget_shopping_cart_content {
+        background-color: #1F1F1F !important;
+    }
+
+    header#top .sf-menu li ul li a:hover, body header#top nav .sf-menu ul li.sfHover > a, header#top .sf-menu li ul li.current-menu-item > a, header#top .sf-menu li ul li.current-menu-ancestor > a, header#top nav > ul > li.megamenu > ul ul li a:hover, header#top nav > ul > li.megamenu > ul ul li.current-menu-item a, #header-secondary-outer ul ul li a:hover, body #header-secondary-outer .sf-menu ul li.sfHover > a, #header-outer .widget_shopping_cart .cart_list li:hover, #header-outer .widget_shopping_cart .cart_list li:hover a, #search-outer .ui-widget-content li:hover, .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+        background-color: #313233 !important;
+    }
+
+    #search-outer .ui-widget-content li a, #search-outer .ui-widget-content i, header#top .sf-menu li ul li a, body #header-outer .widget_shopping_cart .cart_list a, #header-secondary-outer ul ul li a, .woocommerce .cart-notification .item-name, .cart-outer .cart-notification, .sf-menu li ul .sf-sub-indicator [class^="icon-"], .sf-menu li ul .sf-sub-indicator [class * =" icon-"], #header-outer .widget_shopping_cart .quantity {
+        color: #CCCCCC !important;
+    }
+
+    #search-outer .ui-widget-content li:hover a .title, #search-outer .ui-widget-content .ui-state-hover .title, #search-outer .ui-widget-content .ui-state-focus .title, #search-outer .ui-widget-content li:hover a, #search-outer .ui-widget-content li:hover i, #search-outer .ui-widget-content .ui-state-hover a, #search-outer .ui-widget-content .ui-state-focus a, #search-outer .ui-widget-content .ui-state-hover i, #search-outer .ui-widget-content .ui-state-focus i, #search-outer .ui-widget-content .ui-state-hover span, #search-outer .ui-widget-content .ui-state-focus span, body header#top nav .sf-menu ul li.sfHover > a, header#top nav > ul > li.megamenu > ul ul li.current-menu-item a, body #header-outer .widget_shopping_cart .cart_list li:hover a, #header-secondary-outer ul ul li:hover > a, body #header-secondary-outer ul ul li:hover > a i, body header#top nav .sf-menu ul li.sfHover > a .sf-sub-indicator i, #header-outer .widget_shopping_cart li:hover .quantity, body header#top nav .sf-menu ul li:hover > a .sf-sub-indicator i, body header#top nav .sf-menu ul li:hover > a, header#top nav > ul > li.megamenu > ul > li > a:hover, header#top nav > ul > li.megamenu > ul > li.sfHover > a, body header#top nav .sf-menu ul li.current-menu-item > a, body header#top nav .sf-menu ul li.current_page_item > a .sf-sub-indicator i, body header#top nav .sf-menu ul li.current_page_ancestor > a .sf-sub-indicator i, body header#top nav .sf-menu ul li.sfHover > a, #header-secondary-outer ul li.sfHover > a, body header#top nav .sf-menu ul li.current_page_ancestor > a, body header#top nav .sf-menu ul li.current-menu-ancestor > a, body header#top nav .sf-menu ul li.current_page_item > a, body header#top nav .sf-menu ul li.current_page_item > a .sf-sub-indicator [class^="icon-"], body header#top nav .sf-menu ul li.current_page_ancestor > a .sf-sub-indicator [class^="icon-"], body header#top nav .sf-menu ul li.current-menu-ancestor > a, body header#top nav .sf-menu ul li.current_page_item > a, body .sf-menu ul li ul li.sfHover > a .sf-sub-indicator [class^="icon-"], body ul.sf-menu > li > a:active > .sf-sub-indicator i, body ul.sf-menu > li.sfHover > a > .sf-sub-indicator i, body .sf-menu ul li.current_page_item > a, body .sf-menu ul li.current-menu-ancestor > a, body .sf-menu ul li.current_page_ancestor > a, body .sf-menu ul a:focus, body .sf-menu ul a:hover, body .sf-menu ul a:active, body .sf-menu ul li:hover > a, body .sf-menu ul li.sfHover > a, .body sf-menu li ul li a:hover, body .sf-menu li ul li.sfHover > a, body header#top nav > ul > li.megamenu ul li:hover > a {
+        color: #27CCC0 !important;
+    }
+
+    #header-secondary-outer {
+        background-color: #F8F8F8 !important;
+    }
+
+    #header-secondary-outer nav > ul > li > a, body #header-secondary-outer nav > ul > li > a span.sf-sub-indicator [class^="icon-"], #header-secondary-outer #social li a i {
+        color: #666666 !important;
+    }
+
+    #header-secondary-outer #social li a:hover i, #header-secondary-outer nav > ul > li:hover > a, #header-secondary-outer nav > ul > li.current-menu-item > a, #header-secondary-outer nav > ul > li.sfHover > a, #header-secondary-outer nav > ul > li.sfHover > a span.sf-sub-indicator [class^="icon-"], #header-secondary-outer nav > ul > li.current-menu-item > a span.sf-sub-indicator [class^="icon-"], #header-secondary-outer nav > ul > li.current-menu-ancestor > a, #header-secondary-outer nav > ul > li.current-menu-ancestor > a span.sf-sub-indicator [class^="icon-"], body #header-secondary-outer nav > ul > li:hover > a span.sf-sub-indicator [class^="icon-"] {
+        color: #222222 !important;
+    }
+
+    #slide-out-widget-area {
+        background-color: #27CCC0 !important;
+    }
+
+    #slide-out-widget-area, #slide-out-widget-area a, body #slide-out-widget-area a.slide_out_area_close .icon-default-style[class^="icon-"] {
+        color: #eefbfa !important;
+    }
+
+    #slide-out-widget-area h1, #slide-out-widget-area h2, #slide-out-widget-area h3, #slide-out-widget-area h4, #slide-out-widget-area h5 {
+        color: #ffffff !important;
+    }
+
+    body #slide-out-widget-area a:hover, html body #slide-out-widget-area a.slide_out_area_close:hover .icon-default-style[class^="icon-"] {
+        color: #ffffff !important;
+    }
+
+    #footer-outer {
+        background-color: #f5f5f5 !important;
+    }
+
+    #footer-outer #footer-widgets {
+        border-bottom: none !important;
+    }
+
+    #footer-outer #footer-widgets .col ul li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    }
+
+    #footer-outer #footer-widgets .col .widget_recent_comments ul li {
+        background-color: rgba(0, 0, 0, 0.07) !important;
+        border-bottom: 0 !important;
+    }
+
+    #footer-outer, #footer-outer a {
+        color: #CCCCCC !important;
+    }
+
+    #footer-outer .widget h4, #footer-outer .col .widget_recent_entries span, #footer-outer .col .recent_posts_extra_widget .post-widget-text span {
+        color: #777777 !important;
+    }
+
+    #footer-outer #copyright, body {
+        border: none !important;
+        background-color: #1F1F1F !important;
+    }
+
+    #footer-outer #copyright li a i, #footer-outer #copyright p {
+        color: #777777 !important;
+    }
+
+    #call-to-action {
+        background-color: #ECEBE9 !important;
+    }
+
+    #call-to-action span {
+        color: #4B4F52 !important;
+    }
+    </style>
+    <style type="text/css">
+    #header-outer {
+        padding-top: 6px;
+    }
+
+    #header-outer #logo img {
+        height: 110px;
+    }
+
+    #header-outer[data-format="centered-menu-under-logo"] header#top #logo .starting-logo {
+        margin-top: -127px;
+    }
+
+    header#top nav > ul > li > a {
+        padding-bottom: 40px;
+        padding-top: 34px;
+    }
+
+    #header-outer .cart-menu {
+        padding-bottom: 51px;
+        padding-top: 51px;
+    }
+
+    header#top nav > ul li#search-btn, header#top nav > ul li.slide-out-widget-area-toggle {
+        padding-bottom: 44px;
+        padding-top: 45px;
+    }
+
+    header#top .sf-menu > li.sfHover > ul {
+        top: 42px;
+    }
+
+    .sf-sub-indicator {
+        height: 29px;
+    }
+
+    #header-space {
+        height: 122px;
+    }
+
+    body[data-smooth-scrolling="1"] #full_width_portfolio .project-title.parallax-effect {
+        top: 122px;
+    }
+
+    body.single-product div.product .product_title {
+        padding-right: 0;
+    }
+
+    @media only screen and (min-width: 1000px) and(max-width: 1300px) {
+        .nectar-slider-wrap[data-full-width="true"] .swiper-slide .content h2, .nectar-slider-wrap[data-full-width="boxed-full-width"] .swiper-slide .content h2, .full-width-content .vc_span12 .swiper-slide .content h2 {
+            font-size: 45px !important;
+            line-height: 51px !important;
+        }
+
+        .nectar-slider-wrap[data-full-width="true"] .swiper-slide .content p, .nectar-slider-wrap[data-full-width="boxed-full-width"] .swiper-slide .content p, .full-width-content .vc_span12 .swiper-slide .content p {
+            font-size: 18px !important;
+            line-height: 31.2px !important;
+        }
+    }
+
+    @media only screen and (min-width: 690px) and(max-width: 1000px) {
+        .nectar-slider-wrap[data-full-width="true"] .swiper-slide .content h2, .nectar-slider-wrap[data-full-width="boxed-full-width"] .swiper-slide .content h2, .full-width-content .vc_span12 .swiper-slide .content h2 {
+            font-size: 33px !important;
+            line-height: 39px !important;
+        }
+
+        .nectar-slider-wrap[data-full-width="true"] .swiper-slide .content p, .nectar-slider-wrap[data-full-width="boxed-full-width"] .swiper-slide .content p, .full-width-content .vc_span12 .swiper-slide .content p {
+            font-size: 13.2px !important;
+            line-height: 24px !important;
+        }
+    }
+
+    @media only screen and (max-width: 690px) {
+        .nectar-slider-wrap[data-full-width="true"][data-fullscreen="false"] .swiper-slide .content h2, .nectar-slider-wrap[data-full-width="boxed-full-width"][data-fullscreen="false"] .swiper-slide .content h2, .full-width-content .vc_span12 .nectar-slider-wrap[data-fullscreen="false"] .swiper-slide .content h2 {
+            font-size: 15px !important;
+            line-height: 21px !important;
+        }
+
+        .nectar-slider-wrap[data-full-width="true"][data-fullscreen="false"] .swiper-slide .content p, .nectar-slider-wrap[data-full-width="boxed-full-width"][data-fullscreen="false"] .swiper-slide .content p, .full-width-content .vc_span12 .nectar-slider-wrap[data-fullscreen="false"] .swiper-slide .content p {
+            font-size: 7.68px !important;
+            line-height: 17.52px !important;
+        }
+    }
+
+    #mobile-menu #mobile-search, header#top nav ul #search-btn {
+        display: none !important;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        .container {
+            max-width: 1425px;
+            width: 100%;
+            padding: 0 90px;
+        }
+
+        .swiper-slide .content {
+            padding: 0 90px;
+        }
+
+        body .container .container {
+            width: 100% !important;
+            padding: 0 !important;
+        }
+
+        body .carousel-heading .container {
+            padding: 0 10px !important;
+        }
+
+        body .carousel-heading .container .carousel-next {
+            right: 10px;
+        }
+
+        body .carousel-heading .container .carousel-prev {
+            right: 35px;
+        }
+
+        .carousel-wrap[data-full-width="true"] .carousel-heading a.portfolio-page-link {
+            left: 90px;
+        }
+
+        .carousel-wrap[data-full-width="true"] .carousel-heading {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+        .carousel-wrap[data-full-width="true"] .carousel-next {
+            right: 90px !important;
+        }
+
+        .carousel-wrap[data-full-width="true"] .carousel-prev {
+            right: 115px !important;
+        }
+
+        .carousel-wrap[data-full-width="true"] {
+            padding: 0 !important;
+        }
+
+        .carousel-wrap[data-full-width="true"] .caroufredsel_wrapper {
+            padding: 20px !important;
+        }
+
+        #search-outer #search #close a {
+            right: 90px;
+        }
+
+        #boxed, #boxed #header-outer, #boxed #header-secondary-outer, #boxed #page-header-bg[data-parallax="1"], #boxed #featured, #boxed .orbit > div, #boxed #featured article, .ascend #boxed #search-outer {
+            max-width: 1400px !important;
+            width: 90% !important;
+            min-width: 980px;
+        }
+
+        #boxed #search-outer #search #close a {
+            right: 0 !important;
+        }
+
+        #boxed .container {
+            width: 92%;
+            padding: 0;
+        }
+
+        #boxed #footer-outer #footer-widgets, #boxed #footer-outer #copyright {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #boxed .carousel-wrap[data-full-width="true"] .carousel-heading a.portfolio-page-link {
+            left: 35px;
+        }
+
+        #boxed .carousel-wrap[data-full-width="true"] .carousel-next {
+            right: 35px !important;
+        }
+
+        #boxed .carousel-wrap[data-full-width="true"] .carousel-prev {
+            right: 60px !important;
+        }
+    }
+    </style>
+    <style type="text/css">
+    .menu-item-20 {
+        background-image: url("/wp-content/themes/salient/img/iconosweb/ico_home.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .menu-item-16 {
+        background-image: url("/wp-content/themes/salient/img/iconosweb/ico_about.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .menu-item-630 {
+        background-image: url("/wp-content/uploads/2017/12/icon-teamblack32.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .menu-item-15 {
+        background-image: url("/wp-content/themes/salient/img/iconosweb/ico_recent.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .menu-item-14 {
+        background-image: url("/wp-content/themes/salient/img/iconosweb/ico_publications.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .menu-item-13 {
+        background-image: url("/wp-content/themes/salient/img/iconosweb/ico_random.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .menu-item-379 {
+        background-image: url("/wp-content/themes/salient/img/iconosweb/ico_gallery.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .recent-posts-title, .meta-author, .meta-category, .meta-comment-count, .post-meta {
+        display: none !important;
+    }
+
+    .section-title {
+        border-bottom: none !important;
+        padding-bottom: 1em !important;
+    }
+
+    #footer-outer .widget {
+        margin-bottom: 0 !important;
+    }
+
+    #footer-outer .row {
+        margin-bottom: 0;
+        padding: 25px 0 !important;
+    }
+
+    .n-shortcode {
+        display: none !important;
+    }
+
+    #row-no-title .title {
+        display: none;
+    }/* COLOR DE FONDO */
+    .container-wrap, .project-title {
+        background-color: #FFFFFF !important;
+    }
+    </style>
+    <style type="text/css">
+    body, .toggle h3 a, body .ui-widget, table, .bar_graph li span strong, #search-results .result .title span, .woocommerce ul.products li.product h3, .woocommerce-page ul.products li.product h3, body .nectar-love span, body .nectar-social .nectar-love .nectar-love-count, body .carousel-heading h2 {
+        font-family: Oxygen;
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    .bold, strong, b {
+        font-family: Oxygen;
+        font-weight: bold;
+    }
+
+    .nectar-fancy-ul ul li .icon-default-style[class^="icon-"] {
+        line-height: 27px !important;
+    }
+
+    header#top nav > ul > li > a {
+        font-family: Loved by the King;
+        text-transform: uppercase;
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    header#top .sf-menu li ul li a, #header-secondary-outer nav > ul > li > a, #header-secondary-outer ul ul li a, #header-outer .widget_shopping_cart .cart_list a {
+        font-family: Loved by the King;
+        text-transform: uppercase;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    @media only screen and (min-width: 1px) and(max-width: 1000px) {
+        header#top .sf-menu a {
+            font-family: Loved by the King !important;
+            font-size: 14px !important;
+        }
+    }
+
+    #page-header-bg h1, body h1, body .row .col.section-title h1 {
+        font-family: Loved by the King;
+        text-transform: uppercase;
+    }
+
+    @media only screen and (min-width: 690px) and(max-width: 1300px) {
+        #page-header-bg .span_6 h1, body .row .col.section-title h1, h1 {
+            font-size:;
+            line-height:;
+        }
+    }
+
+    #page-header-bg h2, body h2, article.post .post-header h2, article.post.quote .post-content h2, article.post.link .post-content h2, article.post.format-status .post-content h2, #call-to-action span {
+        font-family: Loved by the King;
+        text-transform: uppercase;
+    }
+
+    body h3, .row .col h3, .toggle h3 a, .ascend #respond h3, .ascend h3#comments {
+        font-family: Loved by the King;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        .ascend .comments-section .comment-wrap.full-width-section > h3 {
+            font-size: 34px !important;
+            line-height: 42px !important;
+        }
+    }
+
+    body h4, .row .col h4, .portfolio-items .work-meta h4, #respond h3, h3#comments {
+        font-family: Loved by the King;
+        text-transform: uppercase;
+    }
+
+    body h5, .row .col h5 {
+        font-family: Loved by the King;
+        text-transform: uppercase;
+    }
+
+    body i, body em {
+        font-family: Oxygen;
+    }
+
+    body #page-header-bg h1, html body .row .col.section-title h1 {
+        font-family: Loved by the King;
+        text-transform: uppercase;
+    }
+
+    body #page-header-bg .subheader, body .row .col.section-title > span {
+        font-family: Loved by the King;
+        text-transform: uppercase;
+    }
+
+    .swiper-slide .content h2 {
+        font-family: Loved by the King;
+        text-transform: uppercase;
+    }
+
+    #featured article .post-title h2 span, .swiper-slide .content p, #portfolio-filters-inline #current-category, body .vc_text_separator div {
+        font-family: Oxygen;
+    }
+
+    #portfolio-filters-inline ul {
+        line-height:;
+    }
+
+    .swiper-slide .content p.transparent-bg span {
+    }
+
+    .testimonial_slider blockquote, .testimonial_slider blockquote span, blockquote {
+        font-family: Oxygen;
+    }
+
+    #footer-outer .widget h4, #sidebar h4, #call-to-action .container a, .uppercase, .nectar-button, body .widget_calendar table th, body #footer-outer #footer-widgets .col .widget_calendar table th, .swiper-slide .button a, header#top nav > ul > li.megamenu > ul > li > a, .carousel-heading h2, body .gform_wrapper .top_label .gfield_label, body .vc_pie_chart .wpb_pie_chart_heading, #infscr-loading div, #page-header-bg .author-section a, .ascend input[type="submit"], .ascend button[type="submit"], .widget h4 {
+        font-family: Oxygen;
+        font-weight: normal;
+    }
+
+    .team-member h4, .row .col.section-title p, .row .col.section-title span, #page-header-bg .subheader, .nectar-milestone .subject, .testimonial_slider blockquote span {
+        font-family: Loved by the King;
+        text-transform: uppercase;
+    }
+
+    -6px !important;
+}
+</style>
+    <style type="text/css">
+    .recentcomments a {
+        display: inline !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    </style>
+    <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+    <link rel="icon" href="https://alvaro-marin.com/wp-content/uploads/2017/12/cropped-group300-e1514142133285-32x32.png" sizes="32x32"/>
+    <link rel="icon" href="https://alvaro-marin.com/wp-content/uploads/2017/12/cropped-group300-e1514142133285-192x192.png" sizes="192x192"/>
+    <link rel="apple-touch-icon" href="https://alvaro-marin.com/wp-content/uploads/2017/12/cropped-group300-e1514142133285-180x180.png"/>
+    <meta name="msapplication-TileImage" content="https://alvaro-marin.com/wp-content/uploads/2017/12/cropped-group300-e1514142133285-270x270.png"/>
+
+</head>
+
+<body class="page-template-default page page-id-1298 wpb-js-composer js-comp-ver-3.7.3 vc_responsive" data-header-inherit-rc="false" data-header-search="false" data-animated-anchors="true" data-ajax-transitions="false" data-full-width-header="false" data-slide-out-widget-area="false" data-loading-animation="none" data-bg-header="true" data-ext-responsive="true" data-header-resize="1" data-header-color="custom" data-transparent-header="false" data-smooth-scrolling="0" data-responsive="1">
+
+    <div id="header-space"></div>
+
+    <div id="header-outer" data-has-menu="true" data-user-set-bg="#f5f5f5" data-format="default" data-cart="false" data-transparency-option="0" data-shrink-num="2" data-full-width="false" data-using-secondary="0" data-using-logo="1" data-logo-height="110" data-padding="6" data-header-resize="1">
+
+        <div id="search-outer" class="nectar">
+
+            <div id="search">
+
+                <div class="container">
+
+                    <div id="search-box">
+
+                        <div class="col span_12">
+                            <form action="https://alvaro-marin.com" method="GET">
+                                <input type="text" name="s" id="s" value="Start Typing..." data-placeholder="Start Typing..."/>
+                            </form>
+                        </div>
+                        <!--/span_12-->
+
+                    </div>
+                    <!--/search-box-->
+
+                    <div id="close">
+                        <a href="#">
+                            <span class="icon-salient-x" aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                </div>
+                <!--/container-->
+
+            </div>
+            <!--/search-->
+
+        </div>
+        <!--/search-outer-->
+        <header id="top">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col span_3">
+
+                        <a id="logo" href="https://alvaro-marin.com">
+
+                            <img class="default-logo dark-version" alt="Marin Lab" src="https://alvaro-marin.com/wp-content/uploads/2018/01/logox1.png"/>
+                            <img class="retina-logo  dark-version" alt="Marin Lab" src="https://alvaro-marin.com/wp-content/uploads/2018/01/logox2.png"/>
+                        </a>
+
+                    </div>
+                    <!--/span_3-->
+
+                    <div class="col span_9 col_last">
+
+                        <a href="#mobilemenu" id="toggle-nav">
+                            <i class="icon-reorder"></i>
+                        </a>
+
+                        <nav>
+                            <ul class="buttons">
+                                <li id="search-btn">
+                                    <div>
+                                        <a href="#searchbox">
+                                            <span class="icon-salient-search" aria-hidden="true"></span>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <ul class="sf-menu">
+                                <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-20">
+                                    <a href="https://alvaro-marin.com/">Home</a>
+                                </li>
+                                <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16">
+                                    <a href="https://alvaro-marin.com/about-me/">Alvaro Marin</a>
+                                </li>
+                                <li id="menu-item-1584" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1298 current_page_item menu-item-1584">
+                                    <a href="https://alvaro-marin.com/team/" aria-current="page">Team</a>
+                                </li>
+                                <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15">
+                                    <a href="https://alvaro-marin.com/stories/">Stories</a>
+                                </li>
+                                <li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14">
+                                    <a href="https://alvaro-marin.com/publications/">Publications</a>
+                                </li>
+                                <li id="menu-item-379" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-379">
+                                    <a href="https://alvaro-marin.com/gallery/">Gallery</a>
+                                </li>
+                                <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13">
+                                    <a href="https://alvaro-marin.com/random/">Random</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+
+                    </div>
+                    <!--/span_9-->
+
+                </div>
+                <!--/row-->
+
+            </div>
+            <!--/container-->
+
+        </header>
+
+        <div class="ns-loading-cover"></div>
+
+    </div>
+    <!--/header-outer-->
+
+    <div id="mobile-menu">
+
+        <div class="container">
+            <ul>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-20">
+                    <a href="https://alvaro-marin.com/">Home</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16">
+                    <a href="https://alvaro-marin.com/about-me/">Alvaro Marin</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1298 current_page_item menu-item-1584">
+                    <a href="https://alvaro-marin.com/team/" aria-current="page">Team</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15">
+                    <a href="https://alvaro-marin.com/stories/">Stories</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14">
+                    <a href="https://alvaro-marin.com/publications/">Publications</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-379">
+                    <a href="https://alvaro-marin.com/gallery/">Gallery</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13">
+                    <a href="https://alvaro-marin.com/random/">Random</a>
+                </li>
+                <li id="mobile-search">
+                    <form action="https://alvaro-marin.com" method="GET">
+                        <input type="text" name="s" value="" placeholder="Search.."/>
+                    </form>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="ajax-loading-screen" data-method="ajax">
+        <span class="loading-icon ">
+            <span class="default-skin-loading-icon"></span>
+        </span>
+    </div>
+    <div id="ajax-content-wrap">
+
+        <div id="page-header-wrap" class="">
+            <div class="not-loaded " id="page-header-bg" data-alignment="center" data-parallax="1" data-height="350" style="background-color: #000; background-image: url(https://alvaro-marin.com/wp-content/uploads/2019/05/DSC_4144Group-copy.jpg); height: px;">
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col span_6">
+                            <h1>The Marin Lab Team</h1>
+                            <span class="subheader"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-wrap">
+
+            <div class="container main-content">
+
+                <div class="row">
+
+                    <style>
+                    div.gallery {
+                        margin: 10px;
+                        /*  border: 0px solid #ccc;*/
+                        float: left;
+                        width: 150px;
+                        height: 500px;
+                    }
+
+                    div.gallery:hover {
+                        border: 1px solid #777;
+                    }
+
+                    div.gallery img {
+                        /*  width: 100%;*/
+                        width: 150px;
+                        height: auto;
+                    }
+
+                    div.desc {
+                        padding: 20px;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                    </style>
+
+                    <p>↳ Marin lab lineup in October 2018.</p>
+
+                    <p></p>
+
+                    <h1 class="wp-block-heading">Current and former members of the Marin Lab team</h1>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2024/09/4066324-200.png" rel="noopener">
+                            <img decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2024/09/4066324-200.png" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>you!</h3>
+                            <p>Do you want to be part of our team? we always have projects for bachelor, master projects or internships, with many agreements with other universities around the globe. Contact Alvaro for more info. </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2023/12/Tommie.png" rel="noopener">
+                            <img decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2023/12/Tommie.png" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Tommie Verouden, Msc</h3>
+                            <p>Tommie will be working in his PhD on fragmentation of respiratory-like liquids and lifting our swimming record in the Batavieren race</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2023/12/Eline.png" rel="noopener">
+                            <img decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2023/12/Eline.png" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Eline Ax, Bsc</h3>
+                            <p>After an internship in Tokyo with the great Sensei Tagawa, Eline is working on her master project in our labs.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2023/07/Raph-e1689621519322.jpeg" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2023/07/Raph-e1689621519322.jpeg" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Raphael Saiseau, PhD</h3>
+                            <p>
+                                Graduated at 
+                                <a href="https://www.loma.cnrs.fr/raphael-saiseau/">LOMA</a>
+                                 in Bordeaux, Raph currently works as a postdoc on our ERC Proof of Concept grant &#8220;NanoPlastBalls&#8221;.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2024/09/yongchen2.png" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2024/09/yongchen2.png" alt="YJ" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Yongchen Jiang, pre-Bsc</h3>
+                            Yongchen is currently doing his bachelor at UTSC and came for an internship in our labs, working on spontaneous flow transitions in evaporating drops. 
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2024/09/736703-200.png" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2024/09/736703-200.png" alt="Sebas" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Sebastien Galas, Bsc</h3>
+                            Sebastien is finishing his bachelor at ENS Paris and just did his internship in our labs, with an excellent job on spontaneous flow transitions in evaporating drops. Bonne chance Sebas! 
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2024/09/1710961025412.jpeg" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2024/09/1710961025412.jpeg" alt="David" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>David van de Vliert, Bsc</h3>
+                            David just finished his bachelor assignment on our alcoholic drop project, I will show part of his work at the APS-DFD 2024 in Salt Lake City! 
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2023/07/2025-e1689621636942.jpg" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2023/07/2025-e1689621636942.jpg" alt="Joost" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Joost Dekker, Msc</h3>
+                            Joost is currently making his bachelor assignment on a cool but challenging project with Maurice Mikkers, founder of 
+                            <a href="https://www.youtube.com/c/TheCentrifugeCameraChannel/">the Centrifuge Camera YouTube Channel</a>
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2019/05/DSC_4148Edgar-e1689628331583.jpg" rel="noopener">
+                            <img decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2019/05/DSC_4148Edgar-e1689628331583.jpg" alt="Edgar" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Edgar Ortega, Msc</h3>
+                            Edgar runs numerical experiments on clogging of dense suspensions, in collaboration with Mathieu Souzy, Devaraj van der Meer and Stefan Luding.
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://mathieusouzy.wordpress.com/" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2018/03/mathieu.jpg" alt="Mathieu" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Mathieu Souzy, PhD</h3>
+                             Hardcore board game player, Mathieu has become with us a world expert on the clogging of suspensions. He is a frequent visitor and collaborator.
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2019/05/DSC_4150Eva-150x150.jpg" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2019/05/DSC_4150Eva-150x150.jpg" alt="Eva" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Eva Krolis, Msc</h3>
+                             Eva made her master assignment with us on evaporation of graphene oxide solutions (2022-2023), in close collaboration with our friends at 
+                            <a href="https://bottogroup.wordpress.com">Botto&#8217;s group</a>
+                             in TU Delft.
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2023/07/javi-rodriguez-150x150-1.jpg" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2023/07/javi-rodriguez-150x150-1.jpg" alt="Javi" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Prof. Javier Rodriguez</h3>
+                             Recognisable by his Grolsch (water) bottle and his loud laughs, Javi works normally at University Carlos III in Madrid but he spent a sabbatical in Enschede working in our labs on evaporation of respiratory-like droplets.
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://www.deltares.nl/en/expertise/our-people/dr-carola-seyfert" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2023/07/Carola-e1689630608608.jpeg" alt="Caro" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Carola Seyfert, PhD</h3>
+                            Dedicated birdwatcher and color dreamer, Carola defended her PhD on evaporation of colloidal suspension droplets, winner of a beautiful 
+                            <a href="https://youtu.be/6Pm0fwEIcxg">gallery of Fluid motion</a>
+                            , and still working with us on more stuff.
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2022/05/1601467680772.jpeg" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2022/05/1601467680772.jpeg" alt="Meltem" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Meltem Lampe, Msc</h3>
+                             Meltem was an undergraduate student working on a cool project evaporating graphene droplets, in collaboration with our friends in TU Delft from Botto’s group.
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2022/05/Football_soccer_ball.svg_.png" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2022/05/Football_soccer_ball.svg_.png" alt="Ball" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Sven van Leeuwen, Msc</h3>
+                             A real athlete in our team, Sven was an undergraduate student working on football as a confined system of active agents.
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2019/05/DSC_4160Jiaming-e1689892985662.jpg" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2019/05/DSC_4160Jiaming-e1689892985662.jpg" alt="Jiaming" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Prof. Jiaming Zhang</h3>
+                             Postdoc with us from 2016 to 2020, now Professor at Nanjing University of Aeronautics and Astronautics (NUAA) in China.
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2023/07/1594239412539.jpeg" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2023/07/1594239412539.jpeg" alt="Myrthe" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Myrthe Bruning, PhD</h3>
+                             Among many amazing stuff, Myrthe figured out how to turn droplets into bubbles&#8230;:o She finished her PhD with the thesis: “Confined and Colloidal Droplets” on January 2021. 
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2020/06/62887a1f-c0f5-4f9a-a6fa-b4a6f8a4c32d_large_image-e1689891070472.jpeg" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2020/06/62887a1f-c0f5-4f9a-a6fa-b4a6f8a4c32d_large_image-e1689891070472.jpeg" alt="Andrey" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Andrey Antonowycz, Msc</h3>
+                             Graduated with the bachelor thesis: “Analysis of an Artificial Intelligence Football algorithm via Lagrangian and Eulerian Flow Statistics” on July 2021
+
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2023/07/bryan-1-e1689891423188.png" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2023/07/bryan-1-e1689891423188.png" alt="bryan" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Bryan Verveld, Msc</h3>
+                            Graduated with the master thesis: “Marangoni Bursting of Colloidal Mixtures” on November 2020
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2019/05/DSC_4150Eva-e1689893291404.jpg" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2019/05/DSC_4150Eva-e1689893291404.jpg" alt="Eva" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Eva Krolis, Bsc</h3>
+                            Graduated with the Bachelor thesis: “Evaporation-driven particle assembly on micro-structured fractal-like substrates” on June 2019.
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="https://alvaro-marin.com/wp-content/uploads/2023/07/Laura.png" rel="noopener">
+                            <img loading="lazy" decoding="async" src="https://alvaro-marin.com/wp-content/uploads/2023/07/Laura.png" alt="Laura" width="150" height="150">
+                        </a>
+                        <div class="h3">
+                            <h3>Laura Loeffen, Msc</h3>
+                            Graduated with the Master Thesis: “Colloidal aggregation in evaporating salty sessile droplets” on November 2018. which ended in this 
+                            <a href="https://ris.utwente.nl/ws/portalfiles/portal/236043856/Bruning_2020_Particle_monolayer_assembly_in_evap.pdf">beautiful paper</a>
+                            , which got the  editor&#8217;s suggestion.
+                        </div>
+                    </div>
+
+                </div>
+                <!--/row-->
+
+            </div>
+            <!--/container-->
+
+        </div>
+
+        <div id="footer-outer" data-using-widget-area="false">
+        </div>
+        <!--/footer-outer-->
+
+    </div>
+    <!--/ajax-content-wrap-->
+
+    <a id="to-top">
+        <i class="icon-angle-up"></i>
+    </a>
+
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        },
+        i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-27448912-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.3" id="jquery-ui-menu-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+    <script type="text/javascript" id="wp-i18n-js-after">
+    /* <![CDATA[ */
+    wp.i18n.setLocaleData({
+        'text direction\u0004ltr': ['ltr']
+    });
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-includes/js/dist/a11y.min.js?ver=d90eebea464f6c09bfd5" id="wp-a11y-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.13.3" id="jquery-ui-autocomplete-js"></script>
+    <script type="text/javascript" id="my_acsearch-js-extra">
+    /* <![CDATA[ */
+    var MyAcSearch = {
+        "url": "https:\/\/alvaro-marin.com\/wp-admin\/admin-ajax.php"
+    };
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-content/themes/salient/nectar/assets/functions/ajax-search/wpss-search-suggest.js" id="my_acsearch-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-content/themes/salient/js/superfish.js?ver=1.4.8" id="superfish-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-content/themes/salient/js/respond.js?ver=1.1" id="respond-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-content/themes/salient/js/sticky.js?ver=1.0" id="sticky-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-content/themes/salient/js/prettyPhoto.js?ver=4.8.1" id="nectar_prettyPhoto-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-content/themes/salient/js/isotope.min.js?ver=2.0" id="isotope-js"></script>
+    <script type="text/javascript" id="nectarFrontend-js-extra">
+    /* <![CDATA[ */
+    var nectarLove = {
+        "ajaxurl": "https:\/\/alvaro-marin.com\/wp-admin\/admin-ajax.php",
+        "postID": "1298",
+        "rooturl": "https:\/\/alvaro-marin.com",
+        "pluginPages": [],
+        "disqusComments": "false"
+    };
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-content/themes/salient/js/init.js?ver=4.8.1" id="nectarFrontend-js"></script>
+    <script type="text/javascript" src="https://alvaro-marin.com/wp-content/themes/salient/wpbakery/js_composer/assets/js/js_composer_front.js?ver=3.7.3" id="wpb_composer_front_js-js"></script>
+
 </body>
 </html>
+
